@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(./img/LLPIXEL3.ttf);
+}
+
+/* Nav */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    font-family: "titulo";
+    padding: 10px;
+    color: #8361ff;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: inline-block;
+    color: #282a35;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* banner */
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #2e2e2e;
+    position: relative;
+}
+
+.banner_img{
+    width: 55%;
+    height: auto;
+    position: relative;
+}
+
+img{
+    width: 834px;
+    height: auto;
+}
+
+.title{
+    position: absolute;
+    top: 80px;
+    left: -253px;
+}
+
+.title h1{
+    font-size: 50px;
+    color: azure;
+}
+.title h3{
+    font-size: 30px;
+    color: #8361ff;
+}
+
+.banner_about{
+    position: absolute;
+    width: 322px;
+    height: auto;
+    top: 275px;
+    left: 120px;
+    color: azure;
+    background: rgb(255 255 255 / 4%);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.banner_about .img{
+    position: absolute;
+    top: -110px;
+    left: 7px;
+    width: 95px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.banner_about img {
+    width: 100%;
+    height: auto;
+}
+
+.banner_about h2{
+    color: #8361ff;
+    margin: 10px;
+}
+
+.banner_about p{
+    margin: 10px;
+    text-align: justify;
+}
+
+/* skill */
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.skill h2{
+    font-size: 30px;
+    color: #303030;
+}
+
+
+.skill_web{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
+.skill_frontend div {
+    width: 75px;
+    height: 75px;
+    margin: 12px;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill_frontend i{
+    margin: 12px 15px 2px 15px;
+    font-size: 30px;
+}
+
+div .vertical_linea{ 
+    width: 1px; 
+    height: 70px; 
+    float: left;
+    background-color: rgb(131 97 255);
+    border: 1px ridge rgb(241 241 241);
+}
+
+.skill_backend div {
+    width: 75px;
+    height: 75px;
+    margin: 12px;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill_backend i{
+    margin: 12px 15px 2px 15px;
+    font-size: 30px;
+}
+
+.skill_web h4{
+    color: #303030;
+}
+
