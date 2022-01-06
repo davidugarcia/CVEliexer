@@ -77,10 +77,10 @@ li a:hover {
 
 .banner_about{
     position: absolute;
-    width: 322px;
+    width: 375px;
     height: auto;
     top: 310px;
-    left: 120px;
+    left: 110px;
     color: #ffffff;
     background: rgb(153 153 153 / 10%);
     border-radius: 10px;
@@ -161,7 +161,7 @@ li a:hover {
 
 /* Image overlay */
 
-.overlay, .overlay_wordpress {
+.overlay, .overlay_wordpress, .overlay_Builder {
     position: absolute;
     top: 100%;
     background-color: #303030eb;
@@ -171,16 +171,21 @@ li a:hover {
 }
   
   .work_img:hover .overlay {
-    top: 30%;
+    top: 35%;
     height: 15%;
   }
+
   .work_img:hover .overlay_wordpress {
-    top: 30%;
+    top: 40%;
     height: 5%;
+  }
+
+  .work_img:hover .overlay_Builder {
+    top: 40%;
+    height: 25%;
   }
   
 .card_img {
-    white-space: nowrap; 
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -219,6 +224,7 @@ li a:hover {
 }
   
   /* Caption of Modal Image */
+
 #caption {
     margin: auto;
     display: block;
@@ -231,17 +237,19 @@ li a:hover {
 }
   
 /* Add Animation */
+
 .modal-content, #caption {  
     animation-name: zoom;
     animation-duration: 0.6s;
 }
   
-  @keyframes zoom {
+@keyframes zoom {
     from {transform: scale(0.1)} 
     to {transform: scale(1)}
-  }
+}
   
   /* The Close Button */
+
 .close {
     position: absolute;
     top: 15px;
@@ -266,24 +274,25 @@ li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 350px;
     background-color: #232434;
     background-image: url(./img/w3codes.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-attachment: fixed;
     background-size: cover;
+    margin: 15px 0px 15px 0px;
     padding: 15px;
 }
 
 .skill_web h2 {
     font-size: 50px;
     color: #ffffff;
+    margin: 15px 0px 15px 0px;
 }
 
 .skill_item {
     display: flex;
-    margin: 5px;
+    margin: 20px;
     padding: 5px;
 }
 
@@ -307,11 +316,113 @@ li a:hover {
     color: #282a35;
 }
 
-/* Footer */
+/* Form */
+
+.formu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px 0px 25px 0px;
+    position: relative;
+}
+
+.download_cv{
+    /* background-image: url(./img/formul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 45%;
+}
+
+form{
+    width: 55%;
+}
+
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(231 231 231);
+    padding: 4.3em 3em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 60%);
+}
+
+.form_title{
+    color: #303030;
+    font-size: 24px;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.3em;
+}
+
+.form_group{
+    position: relative;
+    color: #303030;
+}
+
+.form_input{
+     width: 100%;
+     background: none;
+     color: rgb(92 90 90);
+     font-size: 20px;
+     padding: .6em .3em;
+     border: none;
+     outline: none;
+     border-bottom: 2px solid rgb(120 126 126);
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.9);
+    transform-origin: left top;
+    color: #9c46fb;
+}
+
+.form_label{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    cursor: pointer;
+    transform: translateY(10px);
+    transition: transform 0.5s, color .3s;
+}
+
+.form_send{
+    color: #ffffff;
+    background-color: #9c46fb;
+    font-family:'Roboto', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .8em 0;
+    border-radius: .5em;
+    border: none;
+}
+
+.form_line {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    background-color: #9c46fb;
+    transform: scale(0);
+    /* transform: left bottom; */
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
 
 .button_home{
-    margin: 15px;
-    text-align: end;
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
 }
 
 .button_home i {
@@ -325,6 +436,8 @@ li a:hover {
     border-radius: 5px;
     padding: 7px;
 }
+
+/* Footer */
 
 .contact {
     display: flex;
@@ -354,5 +467,3 @@ li a:hover {
     color: #2e2e2e;
     margin: 5px;
 }
-
-/*---------------------------------------------*/
