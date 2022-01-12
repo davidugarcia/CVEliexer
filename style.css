@@ -160,66 +160,52 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 800px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .column_gallery{
     flex: 30%;
-    /* padding: 7px; */
+    padding: 7px;
 }
 
 .work_img{
-    width: 250px;
     position: relative;
 }
 
 .work_img img{
     width: 100%;
-    margin-top: 20px;
     box-shadow: -1px -2px 2px 1px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.work_img:hover img {
+    opacity: 0.5;
 }
 
 /* Image overlay */
 
-.overlay, .overlay_wordpress, .overlay_Builder {
-    position: absolute;
-    top: 100%;
-    background-color: #303030eb;
-    overflow: hidden;
-    width: 100%;
+.middle_icon {
     transition: .5s ease;
-}
-  
-  .work_img:hover .overlay {
-    top: 35%;
-    height: 15%;
-  }
-
-  .work_img:hover .overlay_wordpress {
-    top: 40%;
-    height: 5%;
-  }
-
-  .work_img:hover .overlay_Builder {
-    top: 40%;
-    height: 25%;
-  }
-  
-.card_img {
+    opacity: 0;
     position: absolute;
-    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
+.work_img:hover .middle_icon {
+    opacity: 1;
+}
+  
 .card_icons li {
     display: block;
     margin: 5px;
     font-size: 30px;
-    color: #ffffff;
+    color: #303030;
 }
 
 /* Modal */
