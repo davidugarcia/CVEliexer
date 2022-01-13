@@ -334,10 +334,12 @@ li a:hover {
 }
 
 .download_cv{
-    /* background-image: url(./img/formul.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 45%;
+}
+
+.img_Programming {
+    width: 100%;
+    padding: 10px,
 }
 
 form{
@@ -348,11 +350,11 @@ form{
     margin: auto;
     width: 90%;
     max-width: 400px;
-    background-color: rgb(231 231 231);
+    /* background-color: rgb(231 231 231); */
     padding: 4.3em 3em;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 60%);
+    /* box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 60%); */
 }
 
 .form_title{
@@ -398,15 +400,21 @@ form{
     transition: transform 0.5s, color .3s;
 }
 
-.form_send{
-    color: #ffffff;
-    background-color: #9c46fb;
+.form_send {
+    width: 40%;
+    color: #303030; 
+    border: 2px solid #9c46fb;
     font-family:'Roboto', 'sans-serif';
     font-size: 1rem;
     font-weight: 300;
     padding: .8em 0;
     border-radius: .5em;
-    border: none;
+}
+
+  
+.form_send:hover {
+    background-color: #9c46fb;
+    color: #ffffff;
 }
 
 .form_line {
@@ -422,11 +430,11 @@ form{
 }
 
 .form_input:focus ~ .form_line,
-.form_input:not(:placeholder-shown) ~ .form_line{
+.form_input:not(:placeholder-shown) ~ .form_line {
     transform: scale(1);
 }
 
-.button_home{
+.button_home {
     position: absolute;
     bottom: -10px;
     right: 25px;
@@ -439,7 +447,7 @@ form{
 }
 
 .button_home i:hover {
-    border: 2px solid black;
+    border: 2px solid #303030;
     border-radius: 5px;
     padding: 7px;
 }
