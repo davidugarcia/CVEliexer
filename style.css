@@ -67,8 +67,8 @@ li a:hover {
 /* banner */
 
 .container_banner {
-    background-color: #282520;
     height: 610px;
+    background-color: #282520;
     clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
 }
 
@@ -81,7 +81,7 @@ li a:hover {
     animation: show 2s cubic-bezier(.84,.07,.96,.1) forwards;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,27 +131,119 @@ li a:hover {
     }
 }
 
-/* .banner_about{
-    position: absolute;
-    width: 375px;
-    height: auto;
-    top: 310px;
-    left: 110px;
-    color: #ffffff;
-    border: 1px solid rgb(167 167 167 / 30%);
-    background: rgb(153 153 153 / 10%);
-    border-radius: 10px;
-    padding: 5px;
-} */
+/* About me */
 
-.banner_about h2{
+.container_aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container_aboutme h2 {
+    font-size: 45px;   
+    color: #303030;
+    /* font-family: "seccion"; */
+    font-family: "logo";
+} 
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_aboutme img{
+    width: 780px;
+}
+
+.about_write {
+    width: 330px;
+    margin-top: 60px;
+    margin-left: -80px;
+    margin-right: 80px;
+    font-family: "titulo";
+}
+
+.aboutme h3 {
     color: #9c46fb;
     margin: 10px;
 }
 
-.banner_about p{
+.aboutme p {
     margin: 10px;
     text-align: justify;
+    color: #3f3d56;
+}
+
+.button_cv {
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: #3f3d56; 
+    border: 2px solid #9c46fb;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: .8em 0;
+    border-radius: .5em;
+}
+
+.button_cv:hover {
+    background-color: #9c46fb;
+    color: #ffffff;
+}
+
+/* skill */
+
+.skill_web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232434;
+    background-image: url(./img/w3codes.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 15px 0px 15px 0px;
+    padding: 15px;
+}
+
+.skill_web h2 {
+    position: relative;
+    font-size: 50px;
+    background-color: #222632;
+    color: #ffffff;
+    margin: 15px 0px 15px 0px;
+    font-family: "logo";
+}
+
+.skill_item {
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+}
+
+.skill div {
+    width: 80px;
+    height: 84px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(255 253 253 / 20%), 0 6px 20px 0 rgb(68 68 68);
+    background-color: rgb(255 255 255);
+}
+
+.skill div i{
+    margin: 12px 15px 2px 15px;
+    font-size: 30px;
+}
+
+.skill div h5{
+    color: #282a35;
+    font-family: "titulo";
 }
 
 /* Work */
@@ -166,7 +258,7 @@ li a:hover {
 .work h2{
     font-size: 45px;   
     color: #303030;
-    font-family: "seccion";
+    font-family: "logo";
 }
 
 .work_gallery{
@@ -287,56 +379,6 @@ li a:hover {
     cursor: pointer;
 }
 
-/* skill */
-
-.skill_web{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #232434;
-    background-image: url(./img/w3codes.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 15px 0px 15px 0px;
-    padding: 15px;
-}
-
-.skill_web h2 {
-    font-size: 50px;
-    color: #ffffff;
-    margin: 15px 0px 15px 0px;
-    font-family: "seccion";
-}
-
-.skill_item {
-    display: flex;
-    margin: 20px;
-    padding: 5px;
-}
-
-.skill div {
-    width: 75px;
-    height: 77px;
-    margin: 20px;
-    float: left;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgb(255 253 253 / 20%), 0 6px 20px 0 rgb(68 68 68);
-    background-color: rgb(255 255 255);
-}
-
-.skill div i{
-    margin: 12px 15px 2px 15px;
-    font-size: 30px;
-}
-
-.skill div h5{
-    color: #282a35;
-}
-
 /* Form */
 
 .formu{
@@ -418,7 +460,7 @@ form{
     width: 40%;
     color: #303030; 
     border: 2px solid #9c46fb;
-    font-family:'Roboto', 'sans-serif';
+    font-family:'titulo';
     font-size: 1rem;
     font-weight: 300;
     padding: .8em 0;
