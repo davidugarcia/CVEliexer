@@ -13,10 +13,10 @@
     src: url(./img/ExpletusSans-VariableFont_wght.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: "seccion";
     src: url(./img/DotGothic16-Regular.ttf);
-}
+} */
 
 /* Nav */
 nav{
@@ -69,7 +69,9 @@ li a:hover {
 .container_banner {
     height: 610px;
     background-color: #282520;
-    clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
+    /* clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%); */
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 51% 0);
+    animation: show 2s cubic-bezier(.84,.07,.96,.1) forwards;
 }
 
 .banner {
@@ -77,8 +79,8 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right top;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    animation: show 2s cubic-bezier(.84,.07,.96,.1) forwards;
+    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: show_title 2s cubic-bezier(.84,.07,.96,.1) forwards; */
 }
 
 .title {
@@ -90,7 +92,7 @@ li a:hover {
     height: 500px;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     transform: translate(80%);
-    animation: show 10s forwards,  move 2s 5s forwards;
+    animation: show_title 10s forwards,  move 2s 5s forwards;
 }
 
 .banner .img {
@@ -120,7 +122,14 @@ li a:hover {
 }
 
 @keyframes show {
-    to{
+    to {
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+        clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
+    }
+}
+
+@keyframes show_title {
+    to {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
@@ -252,6 +261,7 @@ li a:hover {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 40px;
     
 }
 
@@ -265,8 +275,8 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 800px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .column_gallery{
@@ -382,24 +392,33 @@ li a:hover {
 /* Form */
 
 .formu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 25px 0px 25px 0px;
+    margin: auto;
+    width: 80%;
+    padding: 15px;
     position: relative;
 }
 
-.download_cv{
-    width: 45%;
+.formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
-.img_Programming {
-    width: 100%;
-    padding: 10px,
+.form_img{
+    width: 45%;
+    padding: 15px;
+}
+
+.form_img img{
+    width: 500px;
 }
 
 form{
-    width: 55%;
+    width: 45%;
 }
 
 .form{
@@ -475,7 +494,7 @@ form{
 
 .form_line {
     position: absolute;
-    width: 100%;
+    width: 90%;
     bottom: 0px;
     left: 0px;
     height: 1px;
@@ -492,8 +511,8 @@ form{
 
 .button_home {
     position: absolute;
-    bottom: -10px;
-    right: 25px;
+    bottom: 30px;
+    right: -130px;
 }
 
 .button_home i {
