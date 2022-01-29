@@ -550,8 +550,7 @@ form{
 }
 
 
-@media (max-width: 320px) {
-
+@media (max-width: 375px) {
     /*Nav*/
     .checkbtn {
       display: block;
