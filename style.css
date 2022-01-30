@@ -564,9 +564,10 @@ form {
     border-bottom: 7px solid #9c46fb;
 }
 
-@media (max-width: 376px) {
-    /*Nav*/
-    nav {
+@media (max-width: 769px) {
+
+     /*Nav*/
+     nav {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -574,12 +575,12 @@ form {
         z-index: 2;
     }
 
-    .checkbtn {
-      display: block;
-    }
-
     .logo {
         padding: 15px
+    }
+
+    .checkbtn {
+        display: block;
     }
 
     nav ul {
@@ -612,6 +613,53 @@ form {
     #check:checked ~ ul{
       left: 0;
     }
+
+    .title {
+        width: 100%;
+    }
+
+    .container_aboutme {
+        width: 90%;
+    }
+
+    .aboutme {
+        align-items: center;
+    }
+
+    .img_aboutme img {
+        width: 345px;
+    }
+
+    .about_write {
+        width: 50%;
+    }
+
+    .button_cv {
+        width: 50%;
+    }
+    
+    .formulario {
+        width: 90%;
+    }
+
+    .form_img {
+        width: 40%;
+    }
+
+    .form_img img {
+        width: 300px;
+    }
+
+    form {
+        width: 50%;
+    }
+    .form_send {
+        width: 45%;
+        padding: 0.6em 0;
+    }
+}
+
+@media (max-width: 376px) {
 
     /*Banner*/
     .container_banner {
@@ -682,10 +730,14 @@ form {
         font-size: 30px;
     }
 
+    .skill_item {
+        margin: 0px;
+    }
+
     .skill div {
-        width: 77px;
-        height: 77px;
-        margin: 10px;
+        width: 80x;
+        height: 83px;
+        margin: 15px;
     }
 
     .skill div i {
@@ -749,12 +801,12 @@ form {
     .skill_item {
         display: flex;
         margin: 15px;
-        padding: 5px;
+        padding: 0px;
     }
 
     .skill div {
-        width: 63px;
-        height: 67px;
+        width: 66px;
+        height: 70px;
         margin: 10px;
     }
 
@@ -764,5 +816,9 @@ form {
 
     .skill div h5 {
         font-size: 10px;
+    }
+
+    .form_img {
+        width: 75%;
     }
 }
