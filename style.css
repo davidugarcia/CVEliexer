@@ -17,7 +17,7 @@
 nav {
     display: flex;
     justify-content:space-between;
-    margin: 0px 20px 0px 20px;
+    margin: 0px auto 0px auto;
     max-width: 1452px;
 }
 
@@ -73,7 +73,9 @@ li a:hover {
 
 /* banner */
 .container_banner {
+    margin: 0px auto 0px auto;
     height: 610px;
+    max-width: 1452px;
     background-color: #282520;
     background-image: url(./img/sets.jpg);
     background-repeat: no-repeat;
@@ -88,11 +90,11 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 52%;
+    width: 50%;
     height: 500px;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     transform: translate(80%);
-    animation: show_title 7s forwards,  move 2s 5s forwards;
+    animation: show_title 7s forwards, move 2s 5s forwards;
 }
 
 .title h1 {
@@ -140,14 +142,25 @@ li a:hover {
     }
 }
 
+/* .img_banner {
+    width: 50%;
+    height: 500px;
+    background-image: url(./img/sets.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+} */
+
 /* About me */
 .container_aboutme {
     margin: 0px auto 30px auto;
-    width: 80%;
     padding: 10px;
+    width: 80%;
+    max-width: 1080px;
 }
 
 .container_aboutme h2 {
+    margin: 0px 0px 15px 0px;
     text-align: center;
     font-size: 45px;   
     color: #303030;
@@ -159,8 +172,6 @@ li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 95%;
-    margin: 50px 30px 30px 30px;
 }
 
 .img_aboutme {
@@ -211,14 +222,15 @@ li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 0px 15px 0px;
+    padding: 15px;
     background-color: #232434;
     background-image: url(./img/w3codes.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-attachment: fixed;
     background-size: cover;
-    margin: 15px 0px 15px 0px;
-    padding: 15px;
+    background-position: center center;
 }
 
 .skill_web h2 {
@@ -523,9 +535,11 @@ form {
 .contact {
     display: flex;
     justify-content: space-between;
-    background-color: #2e2e2e;
+    margin: 0px auto 0px auto;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 1452px;
+    background-color: #2e2e2e;
 }
 
 .footer_logo {
@@ -552,6 +566,14 @@ form {
 
 @media (max-width: 375px) {
     /*Nav*/
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 2;
+    }
+
     .checkbtn {
       display: block;
     }
@@ -655,19 +677,23 @@ form {
         padding: 0.5em 0;
     }
 
-
+    /*Skill*/
     .skill_web h2 {  
         font-size: 30px;
     }
 
     .skill div {
-        width: 66px;
-        height: 66px;
-        margin: 7px;
+        width: 77px;
+        height: 77px;
+        margin: 10px;
+    }
+
+    .skill div i {
+        font-size: 35px;
     }
 
     .skill div h5 {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     /* Work */
@@ -684,11 +710,10 @@ form {
     /* Formulario */
     .formulario {
         width: 100%;
-        margin: auto;
     }
     
     .form_img{
-        width: 75%;
+        width: 65%;
         padding: 10px;
     }
     
