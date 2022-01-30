@@ -667,13 +667,13 @@ form {
     }
 
     .title {
-        width: 100%;
-        justify-content: end;
-        height: 380px;
+        justify-content: none;
+        height: 360px;
         transform: translate(0%);
     }
 
     .title .img {
+        margin-top: 210px;
         width: 100px;
         height: 107px;
     }
