@@ -293,13 +293,13 @@ li a:hover {
 }
 
 .work_img{
-    margin: 7px;
     overflow: hidden;
     position: relative;
 }
 
 .work_img img{
     width: 100%;
+    height: auto;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -534,6 +534,11 @@ form {
 }
 
 /* Footer */
+
+footer {
+    background-color: #2e2e2e;
+}
+
 .contact {
     display: flex;
     justify-content: space-between;
@@ -541,7 +546,7 @@ form {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 1519px;
-    background-color: #2e2e2e;
+   
 }
 
 .footer_logo {
