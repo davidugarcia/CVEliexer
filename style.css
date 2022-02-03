@@ -681,7 +681,7 @@ form {
 
 }
 
-@media (max-width: 612px) {
+@media (max-width: 613px) {
 
     .title h1 {
         font-size: 28px;
@@ -706,7 +706,7 @@ form {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 427px) {
 
     .title .img {
         margin-top: 175px;
