@@ -177,7 +177,6 @@ li a:hover {
 }
 
 .img_aboutme img{
-    /* width: 550px; */
     width: 100%;
     height: auto;
 }
@@ -573,6 +572,7 @@ form {
      nav {
         position: -webkit-sticky;
         position: sticky;
+        padding: 0px 10px 0px 10px;
         top: 0;
         background-color: #ffffff;
         z-index: 2;
@@ -624,6 +624,7 @@ form {
     }
 
     .title .img {
+        margin-top: 230px;
         width: 120px;
         height: 124px;
     }
@@ -673,6 +674,11 @@ form {
         width: 45%;
         padding: 0.6em 0;
     }
+
+    .contact_icons .arrow {
+        display: none;
+    }
+
 }
 
 @media (max-width: 612px) {
@@ -700,6 +706,42 @@ form {
 
 }
 
+@media (max-width: 425px) {
+
+    .title .img {
+        margin-top: 175px;
+        width: 100px;
+        height: 107px;
+    }
+
+    .img_aboutme {
+        width: 90%;
+    }
+
+    .about_write{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .column_gallery{
+        flex: 100%;
+        padding: 7px;
+    }
+
+    .work_img {
+        width: auto;
+    }
+
+    .contact {
+        justify-content: space-around;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+}
+
 @media (max-width: 376px) {
     /*Banner*/
     .container_banner {
@@ -709,12 +751,6 @@ form {
     .title {
         justify-content: none;
         height: 360px;
-    }
-
-    .title .img {
-        margin-top: 170px;
-        width: 100px;
-        height: 107px;
     }
 
     .title h1 {
@@ -741,15 +777,6 @@ form {
     .container_aboutme, .aboutme {
         margin: 0px;
         padding: 0px;
-    }
-
-    .img_aboutme {
-        width: 75%;
-    }
-
-    .about_write{
-        width: 100%;
-        padding: 10px;
     }
 
     /*Skill*/
@@ -781,15 +808,6 @@ form {
         font-size: 30px;
     }
 
-    .column_gallery{
-        flex: 100%;
-        padding: 7px;
-    }
-
-    .work_img {
-        width: auto;
-    }
-
     /* Formulario */
     .formulario {
         width: 100%;
@@ -813,13 +831,6 @@ form {
         padding: 0.5em 0;
     }
 
-    .contact {
-        justify-content: space-around;
-    }
-
-    .footer_logo {
-        display: none;
-    }
 }
 
 @media (max-width: 321px) {
