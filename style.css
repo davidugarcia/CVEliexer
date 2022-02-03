@@ -95,8 +95,9 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 500px;
+    padding: 10px;
+    width: 550px;
+    height: 485px;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     transform: translate(80%);
     animation: show_title 7s forwards, move 2s 5s forwards;
@@ -168,6 +169,7 @@ li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .img_aboutme {
@@ -175,7 +177,9 @@ li a:hover {
 }
 
 .img_aboutme img{
-    width: 550px;
+    /* width: 550px; */
+    width: 100%;
+    height: auto;
 }
 
 .about_write {
@@ -199,10 +203,10 @@ li a:hover {
     margin-left: 10px;
     padding: .8em 0;
     border-radius: .5em;
-    width: 35%;
+    width: 170px;
     background-color: #9c46fb;
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     font-family: "titulo";
 }
@@ -290,9 +294,8 @@ li a:hover {
 }
 
 .work_img{
-    margin: 5px;
-    padding: 12px;
-    width: 245px;
+    margin: 7px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -415,14 +418,15 @@ li a:hover {
 }
 
 .form_img img{
-    width: 500px;
+    width: 100%;
+    height: auto;
 }
 
 form {
     margin: auto;
     padding: 10px;
     width: 45%;    
-    max-width: 420px;
+    max-width: 425px;
     
 }
 
@@ -614,21 +618,30 @@ form {
     }
 
     .title {
-        width: 100%;
+        width: 94%;
         transform: translate(0%);
         animation: show_title 9s forwards;
+    }
+
+    .title .img {
+        width: 120px;
+        height: 124px;
+    }
+
+     .title h1 {
+        font-size: 32px;
+    }
+    
+    .title h2 {
+        font-size: 20px;
     }
 
     .container_aboutme {
         width: 90%;
     }
 
-    .aboutme {
-        align-items: center;
-    }
-
-    .img_aboutme img {
-        width: 345px;
+    .img_aboutme {
+        width: 50%;
     }
 
     .about_write {
@@ -636,32 +649,55 @@ form {
     }
 
     .button_cv {
-        width: 50%;
+        width: 120PX;
+    }
+
+    .skill div {
+        margin: 7px;
     }
     
     .formulario {
-        width: 90%;
+        width: 95%;
     }
 
-    .work_img {
-        width: 220px;
-    }
-
-    .form_img {
-        width: 40%;
-    }
-
-    .form_img img {
-        width: 300px;
+    .form_img{
+        width: 80%;
+        padding: 10px;
     }
 
     form {
-        width: 50%;
+        width: 60%;
     }
+
     .form_send {
         width: 45%;
         padding: 0.6em 0;
     }
+}
+
+@media (max-width: 612px) {
+
+    .title h1 {
+        font-size: 28px;
+    }
+    
+    .title h2 {
+        font-size: 18px;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+
+    .form_img{
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        width: 85%;
+    }
+
 }
 
 @media (max-width: 376px) {
@@ -711,21 +747,9 @@ form {
         width: 75%;
     }
 
-    .img_aboutme img {
-        width: 250px;
-    }
-
     .about_write{
         width: 100%;
         padding: 10px;
-    }
-
-    .button_cv {
-        width: 40%;
-        margin-left: 5px;
-        margin-top: 5px;
-        font-size: 1rem;
-        padding: 0.5em 0;
     }
 
     /*Skill*/
@@ -739,9 +763,8 @@ form {
     }
 
     .skill div {
-        width: 80x;
+        width: 80px;
         height: 83px;
-        margin: 15px;
     }
 
     .skill div i {
@@ -774,11 +797,6 @@ form {
     
     .form_img{
         width: 65%;
-        padding: 10px;
-    }
-    
-    .form_img img{
-        width: 230px;
     }
 
     form {
@@ -809,7 +827,6 @@ form {
     .skill div {
         width: 66px;
         height: 70px;
-        margin: 10px;
     }
 
     .skill div i {
