@@ -1,4 +1,4 @@
-// Obtener el modal.
+// Get the modal.
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -30,4 +30,16 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 };
+
+// Minimixar menu
+const $menu = document.querySelectorAll('nav ul a[href^="#"]');
+console.log ($menu)
+
+$menu.forEach($menu => {
+  $menu.addEventListener('click', function () {
+    document.getElementById('check').checked = false;
+    // console.log ($check);
+  });
+} )
+
 
