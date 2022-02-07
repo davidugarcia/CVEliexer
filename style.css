@@ -7,6 +7,17 @@ html {
     scroll-behavior: smooth;
 }
 
+/* .observer-root-margin {
+    pointer-events: none;
+    z-index: 1000;
+    border: 2px solid orange;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 70%;
+} */
+
 @font-face {
     font-family: "logo";
     src: url(./img/LLPIXEL3.ttf);
@@ -23,7 +34,13 @@ nav {
     justify-content:space-between;
     align-items: center;
     margin: 0px auto 0px auto;
+    padding: 0px 10px 0px 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     max-width: 1452px;
+    z-index: 2;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -68,13 +85,15 @@ li a {
     text-decoration: none;
 }
 
-li:first-child a {
+.selected {
     color: #9c46fb;
 }
 
-li a:hover {
+nav li a.selected {
     color: #9c46fb;
 }
+
+
 
 /* banner */
 .container_banner {
@@ -320,7 +339,7 @@ li a:hover {
     opacity: 0;
     transition: .5s ease;
     background-color: #0000009c;
-  }
+}
 
 .work_img:hover img {
     transform: scale(1.1);
@@ -585,16 +604,6 @@ footer {
 
 @media (max-width: 769px) {
 
-     /*Nav*/
-     nav {
-        position: -webkit-sticky;
-        position: sticky;
-        padding: 0px 10px 0px 10px;
-        top: 0;
-        background-color: #ffffff;
-        z-index: 2;
-    }
-
     .logo {
         padding: 15px
     }
@@ -621,13 +630,13 @@ footer {
         float: none;
         line-height: 32px;
     }
-
-    li a {
-        color: #9c46fb;
-    }
-
+ 
     li:hover {
         background: #3d3a33;
+    }
+
+    li a{
+        color: #868686;
     }
 
     #check:checked ~ ul{
@@ -681,6 +690,10 @@ footer {
     .form_img{
         width: 80%;
         padding: 10px;
+    }
+
+    .overlay, .middle_icons {
+        position: relative;
     }
 
     form {

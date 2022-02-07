@@ -31,15 +31,49 @@ span.onclick = function() {
   modal.style.display = "none";
 };
 
-// Minimixar menu
-const $menu = document.querySelectorAll('nav ul a[href^="#"]');
-console.log ($menu)
 
-$menu.forEach($menu => {
-  $menu.addEventListener('click', function () {
+const $menulinks = document.querySelectorAll('nav ul a[href^="#"]');
+//console.log ($menulinks);
+
+//Method Observer
+var observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+      const id = entry.target.getAttribute("id");
+      //console.log(id);
+      const $menulink = document.querySelector(`nav ul a[href="#${id}"]`);
+  
+      if(entry.isIntersecting){
+
+        var a = document.querySelector("nav ul a");
+        //console.log(a);
+        document.querySelector("nav ul a.selected").classList.remove("selected");
+        $menulink.classList.add("selected");
+        //console.log ($menulink);
+
+      }
+
+    });
+
+  },{ rootMargin: "-40% 0px -60% 0px" }
+);
+
+$menulinks.forEach($menulink => {
+
+  // Minimixar menu
+  $menulink.addEventListener('click', function () {
     document.getElementById('check').checked = false;
     // console.log ($check);
   });
-} )
 
+  //Observer
+  const hash = $menulink.getAttribute("href");
+  const target = document.querySelector(hash);
+  //console.log(target);
+  if(target){
+    observer.observe(target);
+  }
+
+})
 
