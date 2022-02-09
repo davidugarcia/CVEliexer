@@ -696,6 +696,10 @@ footer {
         position: relative;
     }
 
+    .middle_icons li {
+        display: none;
+    }
+
     form {
         width: 60%;
     }
