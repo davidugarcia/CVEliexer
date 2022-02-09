@@ -141,7 +141,7 @@ nav li a.selected {
 }
 
 .title h2 {
-    font-size: 30px;
+    font-size: 25px;
     color: #9c46fb;
     transform: translate(20%);
     animation: move 3s 3s forwards;
